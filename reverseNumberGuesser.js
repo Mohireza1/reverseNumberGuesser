@@ -8,7 +8,7 @@ setTimeout(() => {
   while (lastNumber - firstNumber > 0) {
     let size = prompt(
       `Is your number higher or lower than ${midNumber} or a bingo?`
-    );
+    ).toLowerCase;
     if (size === "lower") {
       lastNumber = midNumber;
       midNumber = Math.round((lastNumber + firstNumber) / 2);
